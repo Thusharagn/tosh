@@ -1,0 +1,47 @@
+
+<table>
+<!--
+<%#= form_for @user,url: {action: :login_authenticate }, method: 'get' do | f | %>
+
+
+<tr>
+  <td><%#= f.label :email%></td>
+  <td><%#= f.email_field :email%></td>
+</tr>
+
+<tr>
+  <td><%#= f.label :password%></td>
+  <td><%#= f.password_field :password%></td>
+</tr>
+
+<tr>
+  <td><%#= f.submit "Sign In"%></td>
+</tr>
+
+<tr>
+	<td><%#=link_to "sign up",new_user_path%></td>
+</tr>
+<%#end%>-->
+
+
+<%= form_tag('/users/login_authenticate',method: :get) %>
+
+<tr>
+<td><%= "Email" %></td>
+<td><%= text_field_tag "email",nil %></td>
+
+</tr>
+
+<tr>
+<td><%= "Password" %></td>
+<td><%= text_field_tag "password",nil %></td>
+
+</tr>
+<tr>
+<td>
+<%= submit_tag "sign_up" %>
+</td>
+</tr>
+</table>
+
+

@@ -1,0 +1,24 @@
+
+
+<%= form_for @user, :action => "update", :method => "patch" do | f | %>
+<table>
+
+<tr>
+  <td><%= f.label :name%></td>
+  <td><%= f.text_field :name%></td>
+</tr>
+<tr>
+  <td><%= f.label :email%></td>
+  <td><%= f.email_field :email%></td>
+</tr>
+
+  <td><%= f.submit "Save" %></td>
+</tr>
+
+<tr>
+	<td><%=link_to "Back",users_path%></td>
+</tr>
+
+</table>
+<%end%>
+

@@ -1,0 +1,1 @@
+#<User id: 41, name: "mango", email: "mango2@mail.com", password: "12345", confirm_password: nil, created_at: "2016-08-02 12:34:27", updated_at: "2016-08-02 12:34:27">#<User id: 40, name: "mango", email: "mango@gmail.com", password: "111111", confirm_password: nil, created_at: "2016-08-02 12:33:15", updated_at: "2016-08-02 12:33:15">
